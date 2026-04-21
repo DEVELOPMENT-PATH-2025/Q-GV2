@@ -21,7 +21,7 @@ async function startServer() {
     }
   });
 
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Mock real-time stats generator
   let stats = {
